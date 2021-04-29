@@ -80,7 +80,8 @@ def get_atime(stream):
 
                 [t_second, t_microsecond] = a_time.split('.')
                 t_second = time.mktime(datetime.datetime.strptime(t_second, "%Y-%m-%d %H:%M:%S").timetuple())
-                a_time = str(t_second + 8 * 60 * 60) + t_microsecond
+                # a_time = str(t_second + 8 * 60 * 60) + t_microsecond
+                a_time = str(t_second).split('.')[0] + "." + t_microsecond
                 print("a_time " + a_time)
 
                 break
