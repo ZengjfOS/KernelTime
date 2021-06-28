@@ -18,7 +18,6 @@ def calc_delta(stream):
     global s_second
     global s_microsecond
     global a_time
-    global outfile
 
     if a_time ==None:
         print("Can't convert to android time")

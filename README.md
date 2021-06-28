@@ -20,3 +20,17 @@
   * 绿色：采样最大、最小间隔波动
   * 红色：采样平均间隔
 
+## Example
+
+* [KernelTime.py](KernelTime.py)
+  * 根据内核log，分析传感器数据是否正常
+* [DateConvert.py](DateConvert.py)
+  * MTK内核log加入UTC时间，系统不能休眠，否则时间不准
+* [KernelWakeup.py](KernelWakeup.py)
+  * 通过内核log分析系统休眠状态下唤醒时间
+* [LogcatWakeup.py](LogcatWakeup.py)
+  * 通过logcat获取系统休眠唤醒点
+* [XYFile.py](XYFile.py)
+  * 文件内容XY转换
+* [Partition.py](Partition.py)
+  * 获取分区信息
